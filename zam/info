@@ -1,0 +1,6 @@
+agent = dhl
+version = 0.0.1
+license = MIT
+maintainer = David Muñoz <david@gul.es>
+script = dhl.py
+description = A DHL shipment tracker

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+touch ${ZOE_HOME}/etc/dummy.conf
