@@ -52,7 +52,7 @@ class DHLAgent:
         return ret
 
     @Message(tags = ["track"])
-    def track(self, sender, identifier):
+    def tracknew(self, sender, identifier):
         print("I have to track ID", identifier)
         stuff = zoe.state.Stuff(sender, CATEGORY, identifier)
         stuff.write("")
