@@ -57,6 +57,12 @@ class DHLAgent:
         stuff = zoe.state.Stuff(sender, CATEGORY, identifier)
         stuff.write("")
 
+    @Message(tags = ["untrack"])
+    def untrack(self, sender, identifier):
+        print("I have to stop tracking track ID", identifier)
+        stuff = zoe.state.Stuff(sender, CATEGORY, identifier)
+        stuff.remove()
+
     def track(self, ident):
         request="""<?xml version="1.0" encoding="UTF-8"?>
 <req:KnownTrackingRequest xmlns:req="http://www.dhl.com" 
